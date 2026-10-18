@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Automação e IA no WhatsApp em Itatiba | Messias Machado – Parceiro Lailla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Guia completo sobre Automação de WhatsApp com IA em Itatiba. Descubra como um Chatbot Inteligente (tipo ChatGPT) ajuda sua empresa a vender mais. Messias Machado, parceiro Lailla.">
+
+  <!-- Schema LocalBusiness (SEO Local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Messias Machado - Parceiro Lailla",
+    "image": "img/foto.jpeg",
+    "description": "Automação de WhatsApp com IA em Itatiba. Messias Machado, parceiro Lailla, implementa chatbot inteligente para atendimento e vendas.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Itatiba",
+      "addressRegion": "[UF]",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Itatiba",
+    "url": "https://SEU_DOMINIO.COM/SUA-URL",
+    "telephone": "11-93951 6416"
+  }
+  </script>
+
+  <!-- Schema FAQ (para rich results no Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Preciso trocar o meu número de WhatsApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Na maioria dos casos, não. Em muitos projetos, é possível conectar a IA ao seu número atual ou estruturar um número oficial para sua empresa sem perder o que você já usa hoje."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O chatbot humanizado substitui meus atendentes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A ideia não é substituir, e sim somar. O chatbot cuida da parte repetitiva, como responder rápido, qualificar e coletar informações, enquanto seu time entra nas situações que exigem negociação, empatia e decisão humana."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Em quanto tempo a IA começa a funcionar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depois de definir o fluxo e as principais mensagens, geralmente é possível ter a IA rodando em poucos dias. O tempo depende mais da clareza do processo do que da tecnologia em si."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A automação de WhatsApp com a Lailla é segura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. A Lailla utiliza tecnologia oficial para garantir a estabilidade da automação de WhatsApp, mantendo os dados e conversas da sua empresa protegidos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Funciona para empresas pequenas ou só para empresas grandes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Funciona tanto para negócios pequenos quanto para empresas grandes. O ponto-chave é o volume de atendimento e o impacto de responder rápido, com qualidade e de forma consistente para seus clientes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que é automação de WhatsApp com IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Automação de WhatsApp com IA é quando um sistema inteligente responde seus clientes automaticamente, faz perguntas, qualifica leads e organiza o atendimento sem depender 100% da equipe humana, usando tecnologias como a Lailla integrada a modelos de inteligência artificial."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #020617;
+      --card: #020617;
+      --accent: #22c55e;
+      --accent-soft: rgba(34, 197, 94, 0.12);
+      --accent-strong: #16a34a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2933;
+      --shadow-soft: 0 24px 50px rgba(15, 23, 42, 0.8);
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --radius-pill: 999px;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: radial-gradient(circle at top, #1e293b 0, #020617 45%, #020617 100%);
+      color: var(--text);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    /* HEADER / NAV */
+    .site-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 30;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.96), rgba(2, 6, 23, 0.85));
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 20% 0, #4ade80, #22c55e 40%, #0f172a 80%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      box-shadow: 0 10px 30px rgba(34, 197, 94, 0.5);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .brand-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-sub {
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-chip {
+      font-size: 0.72rem;
+      color: var(--muted);
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+    }
+
+    .cta-whatsapp-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent);
+      color: #022c22;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 10px 30px rgba(34, 197, 94, 0.6);
+      white-space: nowrap;
+    }
+
+    .cta-whatsapp-nav span.icon {
+      font-size: 1rem;
+    }
+
+    /* HERO */
+    .hero {
+      margin-top: 1.8rem;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr);
+      gap: 1.5rem;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.16), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.12), transparent 60%),
+                  #020617;
+      border-radius: 30px;
+      padding: 1.8rem 1.8rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-tagline .pill-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 30% 0, #4ade80, #22c55e 60%, #166534 100%);
+      font-size: 0.75rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      letter-spacing: -0.03em;
+      margin-bottom: 0.4rem;
+      max-width: 22ch;
+    }
+
+    .hero-title span.highlight {
+      color: var(--accent);
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      color: #cbd5f5;
+      max-width: 540px;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.28rem 0.7rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(51, 65, 85, 0.9);
+      background: rgba(15, 23, 42, 0.88);
+    }
+
+    .hero-meta .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+      margin-bottom: 1.4rem;
+    }
+
+    .cta-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #022c22;
+      padding: 0.7rem 1.3rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 18px 45px rgba(34, 197, 94, 0.75);
+    }
+
+    .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.1rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 0.82rem;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .hero-image-wrapper {
+      margin-top: 0.8rem;
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.85));
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      opacity: 0.93;
+      display: block;
+    }
+
+    .hero-image-badge {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      padding: 0.4rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+    }
+
+    .hero-image-badge span.icon {
+      font-size: 0.9rem;
+    }
+
+    /* LAYOUT PRINCIPAL */
+    .main-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 1.3fr);
+      gap: 1.75rem;
+      margin-top: 2.2rem;
+      align-items: flex-start;
+    }
+
+    /* ARTIGO */
+    .article {
+      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.98), #020617);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem 1.7rem;
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.8);
+      max-width: 780px;
+    }
+
+    .article section {
+      padding-bottom: 1.4rem;
+      border-bottom: 1px solid rgba(30, 41, 59, 0.9);
+      scroll-margin-top: 100px;
+    }
+
+    .article section:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .article section + section {
+      margin-top: 1.6rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .section-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-soft);
+      font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .article p {
+      font-size: 0.93rem;
+      color: #e5e7eb;
+      margin-bottom: 0.6rem;
+      max-width: 70ch;
+    }
+
+    .article ul,
+    .article ol {
+      margin: 0.4rem 0 0.6rem 1.1rem;
+      font-size: 0.92rem;
+      color: #d1d5db;
+      max-width: 70ch;
+    }
+
+    .article li + li {
+      margin-top: 0.25rem;
+    }
+
+    .article strong {
+      color: #f9fafb;
+      font-weight: 600;
+    }
+
+    .highlight-box {
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      padding: 0.85rem 1rem;
+      font-size: 0.87rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+      max-width: 70ch;
+    }
+
+    .highlight-box span.icon {
+      margin-right: 0.35rem;
+    }
+
+    .steps-list li {
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-item + .faq-item {
+      margin-top: 0.7rem;
+      padding-top: 0.6rem;
+      border-top: 1px dashed rgba(51, 65, 85, 0.65);
+    }
+
+    .faq-question {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-answer {
+      font-size: 0.9rem;
+      color: #d1d5db;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      position: sticky;
+      top: 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .sidebar-card {
+      background: rgba(15, 23, 42, 0.98);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      padding: 1rem 1.1rem;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+    }
+
+    .author-card {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      margin-bottom: 0.6rem;
+    }
+
+    .author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 20% 0, #4ade80, #22c55e 50%, #0f172a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      box-shadow: 0 10px 30px rgba(34, 197, 94, 0.6);
+      overflow: hidden;
+      border: 2px solid var(--accent);
+    }
+
+    .author-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .author-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .author-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .author-role {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .sidebar p {
+      font-size: 0.85rem;
+      color: #d1d5db;
+    }
+
+    .sidebar .cta-sidebar {
+      margin-top: 0.7rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .cta-full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border-radius: var(--radius-pill);
+      background: var(--accent);
+      color: #022c22;
+      font-weight: 600;
+      font-size: 0.87rem;
+      box-shadow: 0 16px 40px rgba(34, 197, 94, 0.75);
+    }
+
+    .cta-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .pill {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      padding: 0.15rem 0.6rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.96);
+    }
+
+    .sidebar-section-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .mini-list {
+      list-style: none;
+      font-size: 0.82rem;
+    }
+
+    .mini-list li + li {
+      margin-top: 0.3rem;
+    }
+
+    .mini-list a {
+      color: var(--muted);
+    }
+
+    .mini-list a:hover {
+      color: var(--accent);
+    }
+
+    .mini-list span.bullet {
+      margin-right: 0.3rem;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 2.4rem;
+      border-top: 1px solid rgba(15, 23, 42, 0.95);
+      padding-top: 1.4rem;
+      padding-bottom: 1.6rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer a {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .footer .social {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 900px) {
+      .main-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .sidebar {
+        position: static;
+      }
+      .hero-card {
+        padding: 1.4rem 1.3rem 1.4rem;
+      }
+      .article {
+        padding: 1.4rem 1.2rem;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        padding-inline: 1rem;
+      }
+      .nav-right {
+        gap: 0.4rem;
+      }
+      .nav-chip {
+        display: none;
+      }
+      .hero-meta span {
+        font-size: 0.7rem;
+      }
+      .hero-image {
+        height: 190px;
+      }
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="nav">
+        <div class="nav-left">
+          <div class="logo-icon">🤖</div>
+          <div class="brand">
+            <div class="brand-title">Messias Machado – Parceiro Lailla</div>
+            <div class="brand-sub">Parceiro Lailla · IA no WhatsApp</div>
+          </div>
+        </div>
+        <div class="nav-right">
+          <div class="nav-chip">
+            <span class="status-dot"></span>
+            Atendendo empresas em Itatiba
+          </div>
+          <a href="https://wa.me/message/LF2G7CNWH3GGP1" target="_blank" class="cta-whatsapp-nav">
+            <span class="icon">💬</span>
+            <span>Falar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" id="inicio">
+        <article class="hero-card">
+          <div class="hero-tagline">
+            <span class="pill-icon">✨</span>
+            <span>Automação · IA no WhatsApp em Itatiba</span>
+          </div>
+          <h1 class="hero-title">
+            Como a <span class="highlight">IA no WhatsApp</span> está ajudando empresas em Itatiba a vender mais
+          </h1>
+          <p class="hero-subtitle">
+            Neste artigo, eu, Messias Machado, explico como funciona a
+            <strong>automação de WhatsApp com IA</strong> em Itatiba usando a plataforma Lailla:
+            o que muda no seu dia a dia e como começar com segurança.
+          </p>
+
+          <div class="hero-meta">
+            <span><span class="dot"></span> Por Messias Machado</span>
+            <span>📍 Itatiba · Atendimento regional</span>
+            <span>⏱ Leitura rápida · ~7 min</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/message/LF2G7CNWH3GGP1" target="_blank" class="cta-primary">
+              <span>Quero IA no meu WhatsApp</span>
+              <span>💬</span>
+            </a>
+            <a href="#como-funciona" class="cta-secondary">
+              <span>Ver passo a passo</span>
+              <span>↓</span>
+            </a>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img
+              src="https://partner.lailla.io/wp-content/uploads/2025/11/mockup-pronto.gif"
+              alt="Painel da Lailla mostrando Chatbot com ChatGPT no WhatsApp e automação de vendas"
+              class="hero-image"
+            />
+            <div class="hero-image-badge">
+              <span class="icon">📈</span>
+              <span>Automação real para vendas e atendimento</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <div class="main-layout">
+        <article class="article">
+          <section id="problema">
+            <div class="section-header">
+              <div class="section-icon">⚠️</div>
+              <h2>O caos do WhatsApp nas empresas em Itatiba</h2>
+            </div>
+            <p>
+              Se você sente que o WhatsApp da sua empresa virou uma mistura de oportunidades, cobranças
+              e mensagens perdidas, fique tranquilo: você não está sozinho. É um cenário muito comum em
+              negócios de <strong>Negócios locais</strong> em Itatiba e região.
+            </p>
+            <p>Alguns sinais de que você está deixando dinheiro na mesa todos os dias:</p>
+            <ul>
+              <li>Clientes chamam e demoram a receber resposta, especialmente à noite ou em horário de pico.</li>
+              <li>Conversas importantes se perdem no meio de grupos e listas de transmissão.</li>
+              <li>O time comercial esquece de retornar para contatos interessados.</li>
+              <li>Leads que vêm de anúncios, indicações ou redes sociais não são acompanhados direito.</li>
+            </ul>
+            <div class="highlight-box">
+              <span class="icon">💡</span>
+              Quando o WhatsApp vira um “buraco negro” de mensagens, o problema não é falta de oportunidade –
+              é falta de <strong>ferramenta de automação</strong> adequada.
+            </div>
+          </section>
+
+          <section id="solucao">
+            <div class="section-header">
+              <div class="section-icon">🤖</div>
+              <h2>Chatbot inteligente no WhatsApp: onde a Lailla entra</h2>
+            </div>
+            <p>
+              A <strong>IA no WhatsApp</strong> entra justamente para organizar esse caos. Diferente de robôs antigos,
+              usamos a inteligência do <strong>ChatGPT integrado à Lailla</strong> para transformar seu número em um
+              canal de vendas que entende contexto e trabalha 24 horas.
+            </p>
+            <p>Na prática, o assistente virtual ajuda a:</p>
+            <ul>
+              <li>Receber seus clientes com uma mensagem profissional e acolhedora.</li>
+              <li>Fazer perguntas importantes para entender o perfil de cada pessoa.</li>
+              <li>Separar curiosos de leads realmente interessados.</li>
+              <li>Coletar dados que seu time comercial precisa para fazer uma boa abordagem.</li>
+              <li>Entregar os contatos certos para a pessoa certa, na hora certa.</li>
+            </ul>
+            <div class="highlight-box">
+              <span class="icon">🎯</span>
+              O objetivo não é apenas “robotizar”, e sim criar uma base organizada para o seu time
+              falar com as pessoas certas, com inteligência e no momento ideal.
+            </div>
+          </section>
+
+          <section id="como-funciona">
+            <div class="section-header">
+              <div class="section-icon">🧭</div>
+              <h2>Passo a passo: como implemento IA no WhatsApp na sua empresa</h2>
+            </div>
+            <p>
+              Como parceiro da Lailla em Itatiba, eu sigo um processo simples para implementar
+              a <strong>automação de WhatsApp</strong> sem complicar a sua rotina.
+            </p>
+            <ol class="steps-list">
+              <li>
+                <strong>1. Conversa inicial</strong><br />
+                Entendemos como sua empresa vende hoje: de onde vêm os leads, como o time atende, quais são
+                suas principais dores e objetivos.
+              </li>
+              <li>
+                <strong>2. Desenho do fluxo de atendimento</strong><br />
+                Montamos o “roteiro” da IA: o que ela pergunta, como responde, quando oferece ajuda humana,
+                quando coleta informações e quando encerra a conversa.
+              </li>
+              <li>
+                <strong>3. Implementação com a Lailla</strong><br />
+                Eu configuro a IA na plataforma Lailla, conecto ao seu WhatsApp e ajusto tudo tecnicamente
+                para que funcione da forma correta.
+              </li>
+              <li>
+                <strong>4. Testes e ajustes finos</strong><br />
+                Testamos com situações reais, refinamos mensagens, corrigimos dúvidas comuns e deixamos o tom
+                de voz com a cara da sua marca.
+              </li>
+              <li>
+                <strong>5. Acompanhamento dos primeiros resultados</strong><br />
+                Monitoramos quantos leads chegam, quanto tempo demora para responder, quantas conversas viram
+                oportunidade e onde podemos melhorar.
+              </li>
+            </ol>
+            <div class="highlight-box">
+              <span class="icon">🛠</span>
+              Você não precisa aprender a mexer em código ou API: eu cuido da parte técnica e te
+              explico só o que é realmente importante nas decisões.
+            </div>
+          </section>
+
+          <section id="beneficios">
+            <div class="section-header">
+              <div class="section-icon">📈</div>
+              <h2>Benefícios da Automação com IA para empresas em Itatiba</h2>
+            </div>
+            <p>A IA no WhatsApp não é modinha. Alguns ganhos que você começa a perceber na prática:</p>
+            <ul>
+              <li><strong>Respostas rápidas</strong> – seus clientes não ficam horas esperando retorno.</li>
+              <li><strong>Mais oportunidades aproveitadas</strong> – leads quentes não se perdem.</li>
+              <li><strong>Organização do funil</strong> – você sabe quantos contatos chegaram e de onde vieram.</li>
+              <li><strong>Escala com controle</strong> – sua empresa atende mais pessoas sem inchar a equipe.</li>
+              <li><strong>Imagem profissional</strong> – a experiência do cliente melhora muito.</li>
+            </ul>
+            <div class="highlight-box">
+              <span class="icon">📊</span>
+              Em muitos casos, só o fato de <strong>responder rápido e de forma organizada</strong> já faz a empresa
+              se destacar na região – especialmente em Itatiba, onde muita gente ainda atende de forma
+              manual e lenta.
+            </div>
+          </section>
+
+          <section id="pra-quem-e">
+            <div class="section-header">
+              <div class="section-icon">🏢</div>
+              <h2>Para quem essa solução faz mais sentido</h2>
+            </div>
+            <p>
+              A IA no WhatsApp com a Lailla costuma trazer resultados mais rápidos para empresas que:
+            </p>
+            <ul>
+              <li>Recebem muitos contatos por dia via WhatsApp.</li>
+              <li>Investem em anúncios ou têm forte volume de indicação.</li>
+              <li>Têm equipe pequena ou sobrecarregada para atender tudo.</li>
+              <li>Querem crescer sem perder a qualidade do relacionamento com o cliente.</li>
+            </ul>
+            <p>
+              Alguns tipos de negócio em que isso é especialmente poderoso em Itatiba:
+            </p>
+            <ul>
+              <li> Clínicas, imobiliárias, lojas, prestadores de serviço, infoprodutore...</li>
+            </ul>
+          </section>
+
+          <section id="sobre-mim">
+            <div class="section-header">
+              <div class="section-icon">👤</div>
+              <h2>Quem assina este artigo: Messias Machado, parceiro Lailla</h2>
+            </div>
+            <p>
+              Eu sou <strong>Messias Machado</strong>,  Consultor de automação comercial,
+              atuando em Itatiba e ajudando empresas a transformar o WhatsApp em um canal de geração de negócios.
+            </p>
+            <p>
+              Como parceiro da <strong>Lailla</strong>, meu trabalho é:
+            </p>
+            <ul>
+              <li>Entender a realidade do seu negócio e do seu mercado local.</li>
+              <li>Traduzir isso em fluxos inteligentes de atendimento com IA.</li>
+              <li>Cuidar da implementação técnica na plataforma.</li>
+              <li>Ajudar você a acompanhar os números e enxergar oportunidades de melhoria.</li>
+            </ul>
+            <p>
+              A ideia não é só “colocar um robô”, e sim construir um
+              <strong>processo de atendimento inteligente</strong> que faça sentido para você, sua equipe e seus clientes.
+            </p>
+          </section>
+
+          <section id="como-comecar">
+            <div class="section-header">
+              <div class="section-icon">🚀</div>
+              <h2>Como começar com IA no WhatsApp em Itatiba</h2>
+            </div>
+            <p>Se você chegou até aqui, provavelmente já percebeu que:</p>
+            <ul>
+              <li>O WhatsApp é importante demais para ficar desorganizado.</li>
+              <li>Seu time não consegue responder tudo na velocidade ideal.</li>
+              <li>Existe espaço para vender mais aproveitando melhor o que já chega.</li>
+            </ul>
+            <p>O próximo passo é simples:</p>
+            <ol>
+              <li>Clique no botão abaixo e me chama no WhatsApp.</li>
+              <li>Me conta rapidamente como funciona hoje o atendimento na sua empresa.</li>
+              <li>Marcamos uma conversa (online) para te mostrar caminhos possíveis com IA.</li>
+              <li>Se fizer sentido para você, seguimos com proposta e implementação.</li>
+            </ol>
+            <div class="highlight-box">
+              <span class="icon">✅</span>
+              A primeira conversa não tem compromisso: é para você entender melhor o potencial da IA no
+              WhatsApp para o seu negócio em Itatiba.
+            </div>
+            <br />
+            <a href="https://wa.me/message/LF2G7CNWH3GGP1" target="_blank" class="cta-primary">
+              <span>Falar com Messias Machado no WhatsApp</span>
+              <span>💬</span>
+            </a>
+          </section>
+
+          <section id="faq">
+            <div class="section-header">
+              <div class="section-icon">❓</div>
+              <h2>Perguntas frequentes sobre IA no WhatsApp e Lailla</h2>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Preciso trocar o meu número de WhatsApp?</div>
+              <div class="faq-answer">
+                Na maioria dos casos, não. Em muitos projetos, conseguimos conectar a IA ao seu número atual ou
+                estruturar um número oficial para sua empresa sem perder o que você já usa hoje.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">O chatbot humanizado substitui meus atendentes?</div>
+              <div class="faq-answer">
+                A ideia não é substituir, e sim <strong>somar</strong>. O chatbot cuida da parte repetitiva:
+                responder rápido, qualificar, coletar informações. Seu time entra onde o contato precisa de
+                atenção humana, negociação, empatia e decisão.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Em quanto tempo a IA começa a funcionar?</div>
+              <div class="faq-answer">
+                Depois de definirmos o fluxo e as principais mensagens, em geral é possível ter a IA rodando em
+                poucos dias. O tempo depende mais da clareza do processo do que da tecnologia em si.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">A automação de WhatsApp com a Lailla é segura?</div>
+              <div class="faq-answer">
+                Sim. A Lailla utiliza tecnologia oficial para garantir a estabilidade da sua
+                <strong>automação de WhatsApp</strong>, mantendo seus dados e conversas protegidos.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Funciona para empresas pequenas ou só para empresas grandes?</div>
+              <div class="faq-answer">
+                Funciona tanto para negócios pequenos quanto grandes. O ponto-chave é o volume de atendimento
+                e o impacto de responder rápido, com qualidade e de forma consistente para os seus clientes.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">O que é automação de WhatsApp com IA?</div>
+              <div class="faq-answer">
+                Automação de WhatsApp com IA é quando um sistema inteligente responde seus clientes
+                automaticamente, faz perguntas, qualifica leads e organiza o atendimento sem depender
+                100% da equipe humana, usando tecnologias como a Lailla integrada a modelos de IA.
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <div class="author-card">
+              <div class="author-avatar">
+                <img src="https://leonardo-barbosa.com/wp-content/uploads/2025/06/img-19-copyright.jpg" alt="Foto de Messias Machado">
+              </div>
+              <div class="author-meta">
+                <div class="author-name">Messias Machado</div>
+                <div class="author-role">Parceiro Lailla em Itatiba</div>
+              </div>
+            </div>
+            <p>
+              Ajudo empresas em Itatiba a automatizar o WhatsApp com IA, usando a plataforma Lailla,
+              para atender melhor e vender mais.
+            </p>
+            <div class="cta-sidebar">
+              <a href="https://wa.me/message/LF2G7CNWH3GGP1" target="_blank" class="cta-full">
+                <span>Falar com Messias Machado</span>
+                <span>💬</span>
+              </a>
+              <span class="cta-ghost">
+                <span>⏱</span> Resposta geralmente em poucas horas
+              </span>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <div class="sidebar-section-title">Navegação rápida</div>
+            <ul class="mini-list">
+              <li><span class="bullet">•</span><a href="#problema">O caos do WhatsApp</a></li>
+              <li><span class="bullet">•</span><a href="#solucao">Chatbot com IA</a></li>
+              <li><span class="bullet">•</span><a href="#como-funciona">Passo a passo</a></li>
+              <li><span class="bullet">•</span><a href="#beneficios">Benefícios</a></li>
+              <li><span class="bullet">•</span><a href="#pra-quem-e">Para quem é</a></li>
+              <li><span class="bullet">•</span><a href="#sobre-mim">Sobre Messias Machado</a></li>
+              <li><span class="bullet">•</span><a href="#faq">Perguntas frequentes</a></li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">🤖 IA</span>
+              <span class="pill">💬 Automação</span>
+              <span class="pill">📍 Itatiba</span>
+              <span class="pill">📈 Vendas</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <div class="sidebar-section-title">Quando faz mais sentido falar comigo</div>
+            <ul class="mini-list">
+              <li><span class="bullet">✔</span> Seu WhatsApp está sobrecarregado.</li>
+              <li><span class="bullet">✔</span> Você já investe em anúncios.</li>
+              <li><span class="bullet">✔</span> Quer automação humanizada.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="footer">
+        <div>
+          © <span id="year"></span> Messias Machado – Parceiro Lailla · Parceiro Lailla em Itatiba
+        </div>
+        <div class="social">
+          <span>Conecte-se:</span>
+          <a href="https://wa.me/message/LF2G7CNWH3GGP1" target="_blank">WhatsApp</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Atualiza ano automaticamente
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
